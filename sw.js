@@ -1,5 +1,5 @@
 // Bolso Simples — service worker simples (cache do app para abrir offline)
-const CACHE = 'bolso-simples-v3';
+const CACHE = 'bolso-simples-v4';
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest', './icon.svg'])).then(() => self.skipWaiting()));
 });
